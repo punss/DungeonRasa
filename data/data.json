@@ -1,0 +1,103 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "text": "go north",
+        "intent": "move",
+        "entities": [
+          {
+            "start": 3,
+            "end": 8,
+            "value": "north",
+            "entity": "direction"
+          }
+        ]
+      },
+      {
+        "text": "take axe",
+        "intent": "take",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "axe",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "what's around me",
+        "intent": "description",
+        "entities": []
+      },
+      {
+        "text": "open bag",
+        "intent": "bag",
+        "entities": []
+      },
+      {
+        "text": "bag",
+        "intent": "bag",
+        "entities": []
+      },
+      {
+        "text": "describe",
+        "intent": "description",
+        "entities": []
+      },
+      {
+        "text": "desc",
+        "intent": "description",
+        "entities": []
+      },
+      {
+        "text": "pick sword",
+        "intent": "take",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "sword",
+            "entity": "item"
+          }
+        ]
+      },
+      {
+        "text": "travel east",
+        "intent": "move",
+        "entities": [
+          {
+            "start": 7,
+            "end": 12,
+            "value": "east",
+            "entity": "direction"
+          }
+        ]
+      },
+      {
+        "text": "move north",
+        "intent": "move",
+        "entities": [
+          {
+            "start": 5,
+            "end": 10,
+            "value": "north",
+            "entity": "direction"
+          }
+        ]
+      },
+      {
+        "text": "west",
+        "intent": "move",
+        "entities": [
+          {
+            "start": 0,
+            "end": 4,
+            "value": "west",
+            "entity": "direction"
+          }
+        ]
+      }
+    ]
+  }
+}
