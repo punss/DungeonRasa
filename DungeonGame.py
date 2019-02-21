@@ -1,11 +1,10 @@
 import random
 import sys
-import nlu_model
+from nlu_model import run
 
 bag=[]
 wlist=[]
 pu=0
-train()
 run("get sword")
 print(" ")
 print("take item --> Adds item to bag.")
