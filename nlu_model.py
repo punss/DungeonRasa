@@ -5,13 +5,15 @@ from rasa_nlu.model import Interpreter
 
 training_data = load_data('./data/data.md')
 trainer = Trainer(config.load('./config_spacy.json'))
-trainer.train(training_data)
 model_directory = trainer.persist('./model', project_name="commandnlu")
-
-
 interpreter = Interpreter.load(model_directory)
 
-inp='-1'
-while inp != '0':
-    inp=input()
-    print(interpreter.parse(inp))
+
+def train():
+    trainer.train(training_data)
+
+
+def run(x):
+    guess = interpreter.parse(x)
+    print(guess)
+    return guess
